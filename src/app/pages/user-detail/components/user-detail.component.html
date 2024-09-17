@@ -1,0 +1,32 @@
+<div class="user-detail-container">
+    <header class="user-detail-header">
+      <h2>{{ loggedInUser }}'s Profile</h2>
+    </header>
+  
+    <section class="user-albums">
+      <h3>Albums</h3>
+      <div class="album" *ngFor="let album of userAlbums">
+        <img [src]="album.coverUrl" (error)="handleMissingImage($event)" alt="{{ album.title }} cover" />
+        <div class="album-details">
+          <h4>{{ album.title }}</h4>
+          <p>{{ album.artist }}</p>
+          <p>{{ album.songs }} songs</p>
+        </div>
+      </div>
+    </section>
+  
+    <section class="user-posts">
+      <h3>Posts</h3>
+      <div class="post" *ngFor="let post of userPosts">
+        <p>{{ post.content }}</p>
+        <small>{{ post.date }}</small>
+      </div>
+    </section>
+  
+    <section class="new-post">
+      <h3>Create a new post</h3>
+      <textarea [(ngModel)]="newPostContent" placeholder="What's on your mind?"></textarea>
+      <button (click)="createPost()">Post</button>
+    </section>
+  </div>
+  
