@@ -1,0 +1,56 @@
+.home-container {
+    padding: 20px;
+  }
+  
+  .album-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .album {
+    width: 200px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .album-cover {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .cover1 {
+    background-image: url('https://cdn.dribbble.com/users/677310/screenshots/6214986/ya.music-1600_4x.jpg?resize=1000x750&vertical=center');
+  }
+  
+  .cover2 {
+    background-image: url('https://i.pinimg.com/564x/84/39/4e/84394e456a22c4fa620eafaf307c38a6.jpg');
+  }
+  
+  .cover3 {
+    background-image: url('https://i.pinimg.com/564x/c8/f2/8d/c8f28df11cf2bb516938406d9ac6a572.jpg');
+  }
+  
+  .cover4 {
+    background-image: url('https://i.pinimg.com/736x/80/d2/b7/80d2b70c0af518c8181f1b12d2d15a61.jpg');
+  }
+  
+  .album-details {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .album-details h5 {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .album-details p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
