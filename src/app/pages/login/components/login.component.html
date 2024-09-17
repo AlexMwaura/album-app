@@ -1,0 +1,32 @@
+<div class="login-container">
+
+
+    <div class="login-form">
+      <h1>Urban Beats</h1>
+      <h2>Hello there.</h2>
+      <p>Please enter your username and password to continue.</p>
+      <form (submit)="login()">
+        <input type="text" [(ngModel)]="username" placeholder="Username" name="username" />
+        <input type="password" [(ngModel)]="password" placeholder="Password" name="password" />
+        <button type="submit">Sign In</button>
+    </form>
+      <h3 class="terms">
+        Don't have an account? Please <a (click)="onSignUpClick()">Sign Up</a>.
+      </h3>
+     
+    </div>
+    <div class="login-image">
+        <img src="https://i.pinimg.com/564x/25/2c/44/252c444a00b4d2089116c2822178804f.jpg" alt="album Image">
+      </div>
+  </div>
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
